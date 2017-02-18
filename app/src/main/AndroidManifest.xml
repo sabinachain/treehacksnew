@@ -17,7 +17,7 @@
         </activity>
 
         <service
-            android:name=".TremorHandler"
+            android:name=".TremorHandlerService"
             android:enabled="true"
             android:exported="true"></service>
     </application>
