@@ -17,8 +17,9 @@
         </activity>
 
         <service
-            android:name="layout.TremorHandler"
-            android:exported="false"></service>
+            android:name=".TremorHandler"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
