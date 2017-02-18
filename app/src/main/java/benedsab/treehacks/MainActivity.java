@@ -9,7 +9,7 @@ public static String SHAKE_THRESHOLD = "com.benedsab.treehacks.threshold";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if(!getSharedPreferences("threshhold", MODE_PRIVATE).contains(SHAKE_THRESHOLD)){
+        if(!getSharedPreferences("threshold", MODE_PRIVATE).contains(SHAKE_THRESHOLD)){
 
         }
     }
