@@ -20,7 +20,9 @@
         <service
             android:name=".TremorHandlerService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".ThresholdActivity"></activity>
     </application>
 
 </manifest>
