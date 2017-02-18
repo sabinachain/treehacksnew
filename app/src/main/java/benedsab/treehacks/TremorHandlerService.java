@@ -26,8 +26,8 @@ public class TremorHandlerService extends Service {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.ic_error_black_24dp)
-                        .setContentTitle("My notification")
-                        .setContentText("Hello World!");
+                        .setContentTitle("You're stressed.")
+                        .setContentText("Take a break.");
 // Creates an explicit intent for an Activity in your app
         Intent resultIntent = new Intent(this, MainActivity.class);
 
@@ -80,13 +80,11 @@ public class TremorHandlerService extends Service {
                 SharedPreferences prefs = getSharedPreferences("threshold", MODE_PRIVATE);
                 if(prefs.contains(MainActivity.SHAKE_THRESHOLD)){
                     if(count>prefs.getInt(MainActivity.SHAKE_THRESHOLD, 20)){
-
+                    ourNotification();
                     }
                 }
             }
         });
-
-        ourNotification();
         return START_REDELIVER_INTENT;
     }
     }
